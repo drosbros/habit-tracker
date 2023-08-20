@@ -1,0 +1,21 @@
+[tool.black]
+line-length = 120
+
+[tool.poetry]
+name = "server"
+version = "0.1.0"
+description = "Backend server for habit-tracker project"
+authors = ["Michał Droś <michal.dros01@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^4.2.4"
+black = {extras = ["d"], version = "^23.7.0"}
+psycopg2 = "^2.9.7"
+django-environ = "^0.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
