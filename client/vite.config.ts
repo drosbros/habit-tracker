@@ -11,6 +11,24 @@ export default defineConfig({
       devOptions: {
         enabled: true,
       },
+      manifest: {
+        name: 'Habit Tracker',
+        short_name: 'Habitify',
+        description: "Application to track habits' progress",
+        theme_color: '#ffffff',
+        icons: [
+          {
+            src: 'pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
     }),
   ],
 })
