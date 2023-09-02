@@ -1,4 +1,4 @@
 {
-  "*.{ts,tsx}": "eslint",
-  "*": "prettier --write"
+  "*.{ts,tsx}": "yarn run lint",
+  "*": "yarn run format"
 }
