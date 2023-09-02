@@ -9,7 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prepare": "cd .. && husky install client/.husky",
-    "generate-pwa-assets": "pwa-assets-generator --preset minimal public/vite.svg"
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal public/vite.svg",
+    "format": "prettier . --write"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -27,9 +28,14 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "husky": "^8.0.0",
+    "lint-staged": ">=10",
     "prettier": "3.0.2",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vite-plugin-pwa": "^0.16.4"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --cache --fix",
+    "*.--write": "prettier --write"
   }
 }
