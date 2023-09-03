@@ -1,5 +1,12 @@
+import { Button, CssBaseline } from '@mui/material'
+
 function App() {
-  return <h1>My PWA - test pre-commit</h1>
+  return (
+    <>
+      <CssBaseline />
+      <Button variant='contained'>Hello world</Button>
+    </>
+  )
 }
 
 export default App
