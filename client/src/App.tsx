@@ -1,5 +1,5 @@
 function App() {
-  return <div>My PWA - test pre-commit</div>
+  return <h1>My PWA - test pre-commit</h1>
 }
 
 export default App
