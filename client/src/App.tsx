@@ -1,11 +1,11 @@
-import { Button, CssBaseline } from '@mui/material'
+import { CssBaseline, ThemeProvider } from '@mui/material'
+import theme from './utils/theme'
 
 function App() {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Button variant='contained'>Hello world</Button>
-    </>
+    </ThemeProvider>
   )
 }
 
